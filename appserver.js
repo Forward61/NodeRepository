@@ -21,7 +21,7 @@ http.createServer(function(req,res){
     console.log(str);//'name=a&email=b%40b.com'
 	if( str!= null){
 		console.log('str不为null');
-		if(str.indexOf('field1')){
+		if(str.indexOf('field1')>-1){
 			console.log('包含字符串')
 				res.end('包含字符串Hello world ！ 我是node服务器的返回！');
 
